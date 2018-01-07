@@ -1,0 +1,18 @@
+map j 50j
+map k 50k
+
+" ]]でURLをインクリメント
+map ]] <C-a>
+
+" [[でURLをデクリメント
+map [[ <C-x>
+
+" 検索エンジン追加（alc）
+set searchengines+={"a":"https://eow.alc.co.jp/search?q={{keyword}}"}
+
+" Disable autofocusing of elements during page load
+set disable_autofocus
+
+" customize next/prev page pattern
+set nextpattern=["Next Page", "^\\s*Next\\s*$", "^>$", "^More$", "(^(>>|››|»)\\|?)|((»|››|>>)\\|?$)"]
+set previouspattern=["Previous Page", "^\\s*Prev(ious)?\\s*$", "^<$", "(^(<<|‹‹|«)\\|?)|((<<|‹‹|«)\\|?$)"]
